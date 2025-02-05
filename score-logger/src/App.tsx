@@ -1,7 +1,7 @@
 import { Container, Box, Typography, Paper, useTheme, useMediaQuery, CssBaseline } from '@mui/material';
 import AnalysisForm from './components/AnalysisForm';
 import AnalysisHistory from './components/AnalysisHistory';
-import AnalysisGraph from './components/AnalysisGraph';
+import AnalysisView from './components/AnalysisView';
 import ThemeToggle from './components/ThemeToggle';
 import { AnalysisProvider } from './context/AnalysisContext';
 import { ThemeProvider } from './context/ThemeContext';
@@ -47,9 +47,10 @@ function App() {
             </Typography>
             
             <Box sx={{ 
-              display: 'grid', 
+              display: 'flex',
+              flexDirection: 'column',
               gap: { xs: 2, sm: 3 },
-              gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
+              pl: { xs: 1, sm: 2, md: 8 }
             }}>
               <Paper 
                 elevation={2} 
@@ -75,7 +76,7 @@ function App() {
 
                 }}
               >
-                <AnalysisGraph />
+                <AnalysisView />
               </Paper>
               
               <Paper 
