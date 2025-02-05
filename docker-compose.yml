@@ -2,18 +2,24 @@ services:
   frontend:
     build: 
       context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
     ports:
       - "80:80"
     depends_on:
       - backend
+    restart: unless-stopped
 
   backend:
     build: 
       context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
     ports:
       - "8000:8000"
     environment:
       - CORS_ORIGINS=http://localhost
+    restart: unless-stopped
 
 networks:
   default:
