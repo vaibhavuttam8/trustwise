@@ -29,15 +29,6 @@ Our system implements a modern, scalable architecture with the following compone
 
 #### Database Layer
 - Database System: MySQL 8.0
-- Storage Engine: InnoDB
-- Character Set: utf8mb4
-- Collation: utf8mb4_unicode_ci
-- Connection Pool Configuration:
-  - Max Connections: 100
-  - Connection Timeout: 30s
-  - Idle Timeout: 600s
-
-
 
 ## Development Standards
 
