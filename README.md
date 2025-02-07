@@ -34,7 +34,7 @@ trustwise/
 - FastAPI framework
 - SQLAlchemy for database ORM
 - ML libraries for text analysis
-- PostgreSQL database
+- MySQL database
 
 ## Getting Started
 
