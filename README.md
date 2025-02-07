@@ -42,7 +42,7 @@ trustwise/
 - Node.js 16+
 - Python 3.8+
 - Docker and Docker Compose
-- PostgreSQL
+- MySQL
 
 ### Installation
 
